@@ -1,10 +1,9 @@
 ---
 - name: Install Docker on Debian
-  hosts: all
+  hosts: applications
   become: true
 
   tasks:
-
     - name: Display OS information
       ansible.builtin.debug:
         msg:
